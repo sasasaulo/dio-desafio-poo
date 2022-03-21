@@ -34,13 +34,25 @@ public class Main {
         saulo.setNome("Saulo");
         saulo.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos Saulo: " + saulo.getConteudosInscritos());
-
+        saulo.progredir();
+        System.out.println("--");
+        System.out.println("Conteúdos inscritos Saulo: " + saulo.getConteudosInscritos());
         System.out.println("Conteúdos concluídos Saulo: " + saulo.getConteudosConcluidos());
+        System.out.println("XP: " + saulo.calcularTotalXp());
+
+        System.out.println("-----------------------------------");
 
         Dev maria = new Dev();
         maria.setNome("Maria");
         maria.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos Maria: " + maria.getConteudosInscritos());
+        System.out.println("--");
+        maria.progredir();
+        maria.progredir();
+        maria.progredir();
+        maria.progredir();
+        System.out.println("Conteúdos inscritos Maria: " + maria.getConteudosInscritos());
         System.out.println("Conteúdos concluídos Maria: " + maria.getConteudosConcluidos());
+        System.out.println("XP Total: " + maria.calcularTotalXp());
     }
 }
